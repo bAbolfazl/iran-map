@@ -112,15 +112,15 @@ const IranMap = () => {
                   d={province.d}
                   onMouseOver={() => setProvinceName(province.name)}
                   onMouseLeave={() => setProvinceName("")}
-                  onClick={() => {
-                    setCities(province.cities);
-                    setProvinceSelected(true);
-                    setProvinceNameOnClick(province.name);
-                  }}
+                  // onClick={() => {
+                  //   setCities(province.cities);
+                  //   setProvinceSelected(true);
+                  //   setProvinceNameOnClick(province.name);
+                  // }}
                 />
               ))}
             </g>
-            <g className={styles.sea}>
+            {/* <g className={styles.sea}>
               <path className={styles.caspian} d={caspianD} />
               <path
                 className={styles.persian_gulf}
@@ -128,7 +128,7 @@ const IranMap = () => {
                 onMouseLeave={() => setProvinceName("")}
                 d={persianGulfD}
               />
-            </g>
+            </g> */}
             <g className={styles.lake}>
               <path
                 className={styles.jazmourian}
